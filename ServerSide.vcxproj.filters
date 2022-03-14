@@ -13,10 +13,87 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Messages">
+      <UniqueIdentifier>{ca2861b2-3ecb-4c09-b0ca-a454e96df8b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messages\TxMessages">
+      <UniqueIdentifier>{86e869c5-3457-40f1-9a16-c252956b6c95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Messages\RxMessages">
+      <UniqueIdentifier>{4651dc1e-fda3-4cbd-bb37-0066c43fe2fd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ServerSide.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RxMessageBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Executer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Executer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessagePack.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RxMessageBase.hpp">
+      <Filter>Header Files\Messages\RxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionStartRequest.hpp">
+      <Filter>Header Files\Messages\RxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageToUser.hpp">
+      <Filter>Header Files\Messages\RxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageToAll.hpp">
+      <Filter>Header Files\Messages\RxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="WhoIsOnline.hpp">
+      <Filter>Header Files\Messages\RxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="IAmOnline.hpp">
+      <Filter>Header Files\Messages\RxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="TxMessageBase.hpp">
+      <Filter>Header Files\Messages\TxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionOpened.hpp">
+      <Filter>Header Files\Messages\TxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageForwardingToDestUser.hpp">
+      <Filter>Header Files\Messages\TxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageForwardingToAllUsers.hpp">
+      <Filter>Header Files\Messages\TxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="OnlineList.hpp">
+      <Filter>Header Files\Messages\TxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="ResponseToIAmOnline.hpp">
+      <Filter>Header Files\Messages\TxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionStartRequestRejected.hpp">
+      <Filter>Header Files\Messages\TxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="DestinationIsNotAlive.hpp">
+      <Filter>Header Files\Messages\TxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientMessageWasCorrupted.hpp">
+      <Filter>Header Files\Messages\TxMessages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ClientSide\ConcurrentQueue.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

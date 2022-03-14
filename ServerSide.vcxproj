@@ -89,6 +89,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>D:\boost_1_78_0\boost_1_78_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,7 +141,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Executer.cpp" />
+    <ClCompile Include="RxMessageBase.cpp" />
     <ClCompile Include="ServerSide.cpp" />
+    <ClCompile Include="Session.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ClientSide\ConcurrentQueue.hpp" />
+    <ClInclude Include="ClientMessageWasCorrupted.hpp" />
+    <ClInclude Include="DestinationIsNotAlive.hpp" />
+    <ClInclude Include="Executer.hpp" />
+    <ClInclude Include="IAmOnline.hpp" />
+    <ClInclude Include="MessageForwardingToAllUsers.hpp" />
+    <ClInclude Include="MessageForwardingToDestUser.hpp" />
+    <ClInclude Include="MessagePack.hpp" />
+    <ClInclude Include="MessageToAll.hpp" />
+    <ClInclude Include="MessageToUser.hpp" />
+    <ClInclude Include="OnlineList.hpp" />
+    <ClInclude Include="ResponseToIAmOnline.hpp" />
+    <ClInclude Include="RxMessageBase.hpp" />
+    <ClInclude Include="Session.hpp" />
+    <ClInclude Include="SessionOpened.hpp" />
+    <ClInclude Include="SessionStartRequest.hpp" />
+    <ClInclude Include="SessionStartRequestRejected.hpp" />
+    <ClInclude Include="TxMessageBase.hpp" />
+    <ClInclude Include="WhoIsOnline.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
