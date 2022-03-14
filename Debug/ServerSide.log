@@ -5,10 +5,40 @@
   Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
 D:\Software\Homework\ChatApplication\ServerSide\TxMessageBase.hpp(48,19): warning C4018: '<': signed/unsigned mismatch
 D:\Software\Homework\ChatApplication\ServerSide\RxMessageBase.hpp(51,31): warning C4018: '<': signed/unsigned mismatch
-D:\Software\Homework\ChatApplication\ServerSide\Executer.hpp(69,19): warning C4018: '<': signed/unsigned mismatch
-D:\Software\Homework\ChatApplication\ServerSide\Executer.cpp(44,26): warning C4018: '<': signed/unsigned mismatch
-D:\Software\Homework\ChatApplication\ServerSide\Executer.cpp(33,19): warning C4102: 'HeaderFound': unreferenced label
-D:\Software\Homework\ChatApplication\ServerSide\Executer.cpp(107,20): warning C4018: '<': signed/unsigned mismatch
+D:\Software\Homework\ChatApplication\ServerSide\Executer.hpp(80,19): warning C4018: '<': signed/unsigned mismatch
+D:\Software\Homework\ChatApplication\ServerSide\Executer.cpp(44,27): warning C4018: '<': signed/unsigned mismatch
+D:\Software\Homework\ChatApplication\ServerSide\Executer.cpp(35,20): warning C4102: 'HeaderFound': unreferenced label
+D:\Software\Homework\ChatApplication\ServerSide\Executer.cpp(77,32): warning C4101: 'ex': unreferenced local variable
+D:\Software\Homework\ChatApplication\ServerSide\Executer.cpp(105,21): warning C4018: '<': signed/unsigned mismatch
+D:\Software\Homework\ChatApplication\ServerSide\Executer.cpp(117,32): warning C4101: 'ex': unreferenced local variable
+D:\Software\Homework\ChatApplication\ServerSide\Executer.cpp(146,32): warning C4101: 'ex': unreferenced local variable
+  RxMessageBase.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+D:\Software\Homework\ChatApplication\ServerSide\TxMessageBase.hpp(48,19): warning C4018: '<': signed/unsigned mismatch
+D:\Software\Homework\ChatApplication\ServerSide\Executer.hpp(80,19): warning C4018: '<': signed/unsigned mismatch
+D:\Software\Homework\ChatApplication\ServerSide\RxMessageBase.hpp(51,31): warning C4018: '<': signed/unsigned mismatch
+D:\Software\Homework\ChatApplication\ServerSide\MessageToAll.hpp(13,19): warning C4018: '<': signed/unsigned mismatch
+D:\Software\Homework\ChatApplication\ServerSide\MessageToUser.hpp(16,21): warning C4018: '<': signed/unsigned mismatch
+  ServerSide.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+D:\Software\Homework\ChatApplication\ServerSide\TxMessageBase.hpp(48,19): warning C4018: '<': signed/unsigned mismatch
+D:\Software\Homework\ChatApplication\ServerSide\RxMessageBase.hpp(51,31): warning C4018: '<': signed/unsigned mismatch
+D:\Software\Homework\ChatApplication\ServerSide\Executer.hpp(80,19): warning C4018: '<': signed/unsigned mismatch
+  Session.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+D:\Software\Homework\ChatApplication\ServerSide\TxMessageBase.hpp(48,19): warning C4018: '<': signed/unsigned mismatch
+D:\Software\Homework\ChatApplication\ServerSide\RxMessageBase.hpp(51,31): warning C4018: '<': signed/unsigned mismatch
+D:\Software\Homework\ChatApplication\ServerSide\Executer.hpp(80,19): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
 D:\Software\Homework\ChatApplication\ServerSide\ConcurrentQueue.hpp(67): warning C4172: returning address of local variable or temporary: value
 D:\Software\Homework\ChatApplication\ServerSide\ConcurrentQueue.hpp(67): warning C4172: returning address of local variable or temporary: value
 D:\Software\Homework\ChatApplication\ServerSide\ConcurrentQueue.hpp(67): warning C4172: returning address of local variable or temporary: value

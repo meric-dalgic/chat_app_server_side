@@ -8,18 +8,28 @@
 #include "Session.hpp"
 #include "TxMessageBase.hpp"
 
+extern std::vector<std::exception> ex_log;
+
 class Executer
 {
 public:
 
 	Executer(unsigned int server_port)
 	{
-		socket.open(boost::asio::ip::udp::v4());
-		socket.bind(boost::asio::ip::udp::endpoint(boost::asio::ip::udp::v4(), server_port));
+		try
+		{
+			socket.open(boost::asio::ip::udp::v4());
+			socket.bind(boost::asio::ip::udp::endpoint(boost::asio::ip::udp::v4(), server_port));
 
-		ProducerEnabled = true;
-		ConsumerEnabled = true;
-		TransmitterEnabled = true;
+			ProducerEnabled = true;
+			ConsumerEnabled = true;
+			TransmitterEnabled = true;
+		}
+
+		catch (const std::exception& ex)
+		{
+			throw ex;
+		}
 	}
 
 	void TransmitData();
@@ -28,6 +38,7 @@ public:
 
 	void Consumer();
 
+	//TODO: Make this thread safe
 	inline static std::vector<Session*> ActiveSessionList{};
 
 	Utilities::Wrappers::ConcurrentQueue<MessagePack*>   RawDataQueue{ 10240 };

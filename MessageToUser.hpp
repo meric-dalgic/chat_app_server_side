@@ -31,7 +31,7 @@ public:
 
 			if (p != nullptr)
 			{
-				auto ptr = new MessageForwardingToDestUser(m_destination_user_name, m_msg);
+				auto ptr = new MessageForwardingToDestUser(userName, m_msg);
 				ptr->m_endpoint = p->m_endpoint;
 				queue->Enqueue(ptr);
 			}

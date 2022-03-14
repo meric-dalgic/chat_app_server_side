@@ -11,6 +11,7 @@ public:
 	m_sender_user_name(sender_user_name), m_msgContent(msgContent)
 	{
 		type = MessageType::MessageForwardingToDestUser;
+		AddToPayload(m_sender_user_name);
 		AddToPayload(m_msgContent);
 	}
 
